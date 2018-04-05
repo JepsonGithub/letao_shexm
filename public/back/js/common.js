@@ -41,4 +41,10 @@ $('.icon_menu').click(function() {
   $('.lt_aside').toggleClass("menuhide");
   $('.lt_topbar').toggleClass("menuhide");
   $('.lt_main').toggleClass("menuhide");
-})
+});
+
+
+// 显示退出模态框
+$('.icon_logout').click(function() {
+  $('#logoutModal').modal("show");
+});
