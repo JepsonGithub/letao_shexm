@@ -1,5 +1,23 @@
 @charset "utf-8";
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 .body_bg {
   background: #222D32;
 }
@@ -13,3 +31,62 @@
   line-height: 40px;
   font-size: 20px;
 }
+
+/* lt_aside 开始 */
+.lt_aside {
+  width: 180px;
+  height: 100%;
+  background-color: #222D32;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.lt_aside .brand {
+  height: 50px;
+  background-color: #367FA9;
+}
+.lt_aside .brand a {
+  color: white;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+}
+
+.lt_aside .user {
+  height: 180px;
+  padding-top: 30px;
+}
+.lt_aside .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.lt_aside .user p {
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   color: white;
+   font-size: 16px;
+ }
+
+
+.lt_aside .nav li a {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: #CCC;
+  padding-left: 40px;
+}
+.lt_aside .nav li i {
+  margin-right: 5px;
+}
+
+/* lt_aside 结束 */
+
+
+

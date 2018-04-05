@@ -76,6 +76,7 @@ $(function() {
 
         if ( data.success ) {
           console.log( "登录成功" );
+          location.href = "index.html";
         }
 
         if ( data.error === 1000 ) {
