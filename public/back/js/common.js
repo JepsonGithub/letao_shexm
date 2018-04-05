@@ -26,4 +26,11 @@ $(document).ajaxStop(function() {
     console.log( "ajax结束了" )
     NProgress.done();
   }, 500);
+});
+
+
+
+// 二级菜单切换功能
+$(".category").click(function() {
+  $(this).next().stop().slideToggle();
 })

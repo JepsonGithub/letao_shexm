@@ -76,16 +76,21 @@ a:active {
  }
 
 
-.lt_aside .nav li a {
+.lt_aside .nav a {
   height: 40px;
   line-height: 40px;
   display: block;
   color: #CCC;
   padding-left: 40px;
 }
-.lt_aside .nav li i {
+.lt_aside .nav i {
   margin-right: 5px;
 }
+.lt_aside .nav .child a {
+  padding-left: 60px;
+}
+
+
 /* lt_aside 结束 */
 
 
@@ -115,7 +120,6 @@ a:active {
   color: white;
   font-size: 16px;
 }
-
 
 /* lt_main 结束 */
 
