@@ -29,6 +29,10 @@ $(function() {
           notEmpty: {
             // 提示信息
             message: "用户名不能为空"
+          },
+          // 回调提示信息
+          callback: {
+            message: "用户名不存在"
           }
         }
       },
@@ -42,6 +46,10 @@ $(function() {
             min: 6,
             max: 12,
             message: "密码长度必须是 6-12 位"
+          },
+          // 回调提示信息
+          callback: {
+            message: "密码错误"
           }
         }
       }
@@ -70,12 +78,17 @@ $(function() {
           console.log( "登录成功" );
         }
 
-        if ( data.error === 1001 ) {
-          console.log( "密码错误" );
+        if ( data.error === 1000 ) {
+          console.log( "用户名不存在" );
+          // 参数1: 字段
+          // 参数2: 校验状态
+          // 参数3: 指定校验信息
+          $('#form').data("bootstrapValidator").updateStatus("username", "INVALID", "callback");
         }
 
-        if (data.error === 1000 ) {
-          console.log( "用户名不存在" );
+        if ( data.error === 1001 ) {
+          console.log( "密码错误" );
+          $('#form').data("bootstrapValidator").updateStatus("password", "INVALID", "callback");
         }
       }
     })
