@@ -41,6 +41,10 @@ a:active {
   left: 0;
   top: 0;
   z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.menuhide {
+  left: -180px;
 }
 
 .lt_aside .brand {
@@ -101,6 +105,10 @@ a:active {
   background-color: pink;
   padding-left: 180px;
   padding-top: 70px;
+  transition: all 1s;
+}
+.lt_main.menuhide {
+  padding-left: 0px;
 }
 
 .lt_topbar {
@@ -111,6 +119,10 @@ a:active {
   width: 100%;
   background-color: #3c8dbc;
   padding-left: 180px;
+  transition: all 1s;
+}
+.lt_topbar.menuhide {
+  padding-left: 0px;
 }
 .lt_topbar a {
   width: 50px;

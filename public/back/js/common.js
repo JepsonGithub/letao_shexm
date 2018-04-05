@@ -34,3 +34,11 @@ $(document).ajaxStop(function() {
 $(".category").click(function() {
   $(this).next().stop().slideToggle();
 })
+
+
+// 菜单栏切换功能
+$('.icon_menu').click(function() {
+  $('.lt_aside').toggleClass("menuhide");
+  $('.lt_topbar').toggleClass("menuhide");
+  $('.lt_main').toggleClass("menuhide");
+})
