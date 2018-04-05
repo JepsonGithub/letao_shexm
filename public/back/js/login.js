@@ -79,6 +79,15 @@ $(function() {
         }
       }
     })
-  })
+  });
+
+
+
+  // 3. 重置表单功能, 重置校验状态
+  $('[type="reset"]').click(function(e) {
+    // 创建 bootstrapValidator 实例,
+    // 实例的 resetForm() 方法可以重置表单的校验状态, 如果传了 true, 表示连内容也重置
+    $('#form').data("bootstrapValidator").resetForm();
+  });
 
 })
