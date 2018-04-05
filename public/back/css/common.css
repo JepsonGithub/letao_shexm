@@ -112,7 +112,6 @@ a:active {
 
 .lt_main {
   height: 1000px;
-  background-color: pink;
   padding-left: 180px;
   padding-top: 70px;
   transition: all 1s;
@@ -141,6 +140,13 @@ a:active {
   text-align: center;
   color: white;
   font-size: 16px;
+}
+
+
+.charts_1,
+.charts_2 {
+  height: 400px;
+  width: 48%;
 }
 
 /* lt_main 结束 */
